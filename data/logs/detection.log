@@ -1,0 +1,319 @@
+2025-01-08 13:46:28,049 - ERROR - Error loading model: File not found: filepath=ddos_model.keras. Please ensure the file is an accessible `.keras` zip file.
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 200, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=ddos_model.keras. Please ensure the file is an accessible `.keras` zip file.
+2025-01-08 13:46:28,049 - ERROR - Error analyzing traffic: File not found: filepath=ddos_model.keras. Please ensure the file is an accessible `.keras` zip file.
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 110, in analyze_traffic
+    detector = DDoSDetector()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 200, in load_model
+    raise ValueError(
+ValueError: File not found: filepath=ddos_model.keras. Please ensure the file is an accessible `.keras` zip file.
+2025-01-08 13:47:10,899 - ERROR - Error loading model: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-01-08 13:47:10,906 - ERROR - Error analyzing traffic: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 110, in analyze_traffic
+    detector = DDoSDetector()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-01-08 14:33:58,594 - ERROR - Error loading model: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "<ipython-input-1-d351f03c0f6e>", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-01-08 14:33:58,638 - ERROR - Error analyzing traffic: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "<ipython-input-1-d351f03c0f6e>", line 110, in analyze_traffic
+    detector = DDoSDetector()
+               ^^^^^^^^^^^^^^
+  File "<ipython-input-1-d351f03c0f6e>", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "c:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-03-28 08:24:19,358 - ERROR - Error loading model: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-03-28 08:24:19,366 - ERROR - Error analyzing traffic: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 110, in analyze_traffic
+    detector = DDoSDetector()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-03-28 09:55:20,066 - ERROR - Error loading model: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+2025-03-28 09:55:20,071 - ERROR - Error analyzing traffic: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}
+Traceback (most recent call last):
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 110, in analyze_traffic
+    detector = DDoSDetector()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\detect_ddos.py", line 27, in __init__
+    self.model = load_model(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_api.py", line 189, in load_model
+    return saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 367, in load_model
+    return _load_model_from_fileobj(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 444, in _load_model_from_fileobj
+    model = _model_from_config(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\saving_lib.py", line 433, in _model_from_config
+    model = deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\models\sequential.py", line 355, in from_config
+    layer = serialization_lib.deserialize_keras_object(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\saving\serialization_lib.py", line 718, in deserialize_keras_object
+    instance = cls.from_config(inner_config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 679, in from_config
+    return cls(**config)
+           ^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\lstm.py", line 486, in __init__
+    super().__init__(
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\rnn\rnn.py", line 200, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\layers\layer.py", line 285, in __init__
+    raise ValueError(
+ValueError: Unrecognized keyword arguments passed to LSTM: {'batch_input_shape': [None, 1, 15], 'time_major': False}

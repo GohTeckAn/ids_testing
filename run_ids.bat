@@ -1,0 +1,3 @@
+@echo off
+echo Requesting administrator privileges...
+powershell Start-Process cmd -Verb RunAs -ArgumentList '/c cd /d "%~dp0" && venv311\Scripts\python.exe scripts/run_ids.py'

@@ -1,0 +1,5 @@
+Destination Port,Total Length of Fwd Packets,Total Length of Bwd Packets,Fwd Packet Length Max,Fwd Packet Length Mean,Bwd Packet Length Max,Bwd Packet Length Mean,Fwd Header Length,Average Packet Size,Avg Fwd Segment Size,Avg Bwd Segment Size,Fwd Header Length.1,Subflow Fwd Bytes,Subflow Bwd Bytes,Init_Win_bytes_forward
+443,55,55,55.0,66,66,66.0,62.0,62,60.5,1.0,0.0,55,66,510
+443,55,55,55.0,66,66,66.0,62.0,62,60.5,1.0,0.0,55,66,513
+6617,56,56,56.0,54,54,54.0,64.0,64,55.0,2.0,0.0,56,54,16383
+443,55,55,55.0,66,66,66.0,62.0,62,60.5,1.0,0.0,55,66,510

@@ -1,0 +1,3 @@
+"C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\venv311\Scripts\python.exe" "C:\Users\ACER\Documents\ForYourPropose\AI-based IDS\ddos_generator2.py"
+
+**paste at cmd and enter**
